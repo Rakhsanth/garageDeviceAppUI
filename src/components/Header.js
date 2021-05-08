@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
     menuButton: {
         marginRight: theme.spacing(2),
     },
+    heroIcon: {
+        height: '2.5rem',
+    },
     title: {
         marginLeft: '50%',
         transform: 'translateX(-50%)',
@@ -185,6 +188,17 @@ function Header(props) {
                 <Toolbar>
                     <Typography className={classes.title} variant="h5">
                         <Link to="/">
+                            <IconButton
+                                aria-label="account of current user"
+                                aria-controls="primary-search-account-menu"
+                                aria-haspopup="true"
+                                color="inherit"
+                            >
+                                <img
+                                    className={classes.heroIcon}
+                                    src="/mobileGarage.png"
+                                />
+                            </IconButton>
                             <MUILink className={classes.links}>
                                 JnJ Device Garage
                             </MUILink>
